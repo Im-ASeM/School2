@@ -24,7 +24,7 @@
             {
                 counte += item.Point;
             }
-            return Math.Truncate(counte / Score.Count *100) / 100;
+            return counte != 0 ? Math.Truncate(counte / Score.Count *100) / 100 : -1;
         }
     }
     public List<Score> Score { get; set; }

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "z5H2gLINEfNZL9VWlnHIi3KoA4vMTaDeR4bV3veQlNWj3yfpujbP1ZZVZIMEpjbwzqVXLefL7KVe6tib4HWbCQ==",
+  "dgSpecHash": "wgYEG4wbyUPDPPH7qtPr1lrgDCbQJaQzhh5v4CeOEWLuRNpQ2rvJ6F7dVTs3giocr2wTdMvvFsayXjK2h4QMhQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\asemn\\source\\repos\\School\\School\\School.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\asemn\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\asemn\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\asemn\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\asemn\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\asemn\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\asemn\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.5\\microsoft.data.sqlclient.5.1.5.nupkg.sha512",

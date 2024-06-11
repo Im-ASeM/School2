@@ -1,12 +1,22 @@
-﻿public class StudentProccesRepository : IStudentProccesRepository
+﻿using BCrypt.Net;
+using Microsoft.EntityFrameworkCore;
+
+public class StudentProccesRepository : IStudentProccesRepository
 {
     Context db = new Context();
     ScoreProccesRepository spr = new ScoreProccesRepository();
-    public void addStudent(NewStudent student)
+    string paper = "salam man ASeM hastam 321";
+    public bool addStudent(NewStudent student)
     {
-        Students add = new Students { Code = student.Code, Name = student.Name, ClassName = student.ClassName, isPass = true };
+        if (db.StudentsTbl.Any(x => x.Code == student.Code))
+        {
+            return false;
+        }
+        string x = BCrypt.Net.BCrypt.HashPassword(student.Password + paper + student.Code);
+        Students add = new Students { Code = student.Code, Name = student.Name, password = x, ClassName = student.ClassName, isPass = true };
         db.StudentsTbl.Add(add);
         db.SaveChanges();
+        return true;
     }
 
     public Student getStudent(int Id)
@@ -42,10 +52,28 @@
         List<Student> results = new List<Student>();
         foreach (Students chose in db.StudentsTbl.ToList())
         {
-            Student result = new Student { Id = chose.Id, Name = chose.Name, ClassName = chose.ClassName, Code = chose.Code ,Score = spr.getScores(chose.Id)};
+            Student result = new Student { Id = chose.Id, Name = chose.Name, ClassName = chose.ClassName, Code = chose.Code, Score = spr.getScores(chose.Id) };
             results.Add(result);
         }
         return results;
+    }
+
+    public string login(string username, string password)
+    {
+        Students loginTry = db.StudentsTbl.Where(x=>x.Code == username).FirstOrDefault();
+        if(loginTry==null)
+        {
+            return "user Not fount";
+        }
+        else if(BCrypt.Net.BCrypt.Verify(password+paper+username,loginTry.password))
+        {
+            return "login sucssesful";
+        }
+        else
+        {
+            return "invalid password";
+        }
+
     }
 
     public bool removeStudent(int Id)
@@ -58,16 +86,31 @@
         return true;
     }
 
-    public bool updateStudent(UpdateStudent student)
+    public string updateStudent(UpdateStudent student)
     {
         Students update = db.StudentsTbl.Find(student.Id);
-        if (update == null) { return false; }
-        update.Name = student.Name;
-        update.Code = student.Code;
-        update.ClassName = student.ClassName;
-        db.StudentsTbl.Update(update);
-        db.SaveChanges();
-        return true;
+        if (update == null)
+        {
+            return "invalid Id";
+        }
+        else if (update.Code != student.Code)
+        {
+            return "invalid username";
+        }
+        else if (!BCrypt.Net.BCrypt.Verify(student.OldPassword + paper + student.Code , update.password))
+        {
+            return "invalid Password";
+        }
+        else
+        {
+            update.Name = student.Name;
+            update.Code = student.Code;
+            update.password = BCrypt.Net.BCrypt.HashPassword(student.NewPassword + paper + student.Code);
+            update.ClassName = student.ClassName;
+            db.StudentsTbl.Update(update);
+            db.SaveChanges();
+            return "Done";
+        }
     }
 }
 

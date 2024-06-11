@@ -25,8 +25,7 @@ public class StudentController : Controller
     [HttpPost]
     public IActionResult AddStudent(NewStudent student)
     {
-        spr.addStudent(student);
-        return Ok();
+        return Ok(spr.addStudent(student));
     }
     [HttpDelete]
     public IActionResult DeleteStudent(int id)
@@ -37,8 +36,7 @@ public class StudentController : Controller
     [HttpPut]
     public IActionResult UpdateStudent(UpdateStudent student)
     {
-        bool result = spr.updateStudent(student);
-        return result ? Ok("Done") : NotFound();
+        return Ok(spr.updateStudent(student));
     }
 
 }

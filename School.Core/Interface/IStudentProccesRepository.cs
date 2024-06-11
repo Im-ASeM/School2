@@ -2,7 +2,8 @@
 {
     Student getStudent(int Id);
     List<Student> getStudents();
-    void addStudent(NewStudent student);
+    bool addStudent(NewStudent student);
     bool removeStudent(int Id);
-    bool updateStudent(UpdateStudent student);
+    string updateStudent(UpdateStudent student);
+    string login(string username, string password);
 }

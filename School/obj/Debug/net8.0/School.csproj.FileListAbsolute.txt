@@ -72,3 +72,4 @@ C:\Users\asemn\source\repos\School\School\obj\Debug\net8.0\refint\School.dll
 C:\Users\asemn\source\repos\School\School\obj\Debug\net8.0\School.pdb
 C:\Users\asemn\source\repos\School\School\obj\Debug\net8.0\School.genruntimeconfig.cache
 C:\Users\asemn\source\repos\School\School\obj\Debug\net8.0\ref\School.dll
+C:\Users\asemn\source\repos\School\School\bin\Debug\net8.0\BCrypt.Net-Next.dll

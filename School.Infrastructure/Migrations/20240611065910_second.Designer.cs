@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace School.Infrastructure.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20240609065757_first")]
-    partial class first
+    [Migration("20240611065910_second")]
+    partial class second
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -71,6 +71,10 @@ namespace School.Infrastructure.Migrations
 
                     b.Property<bool>("isPass")
                         .HasColumnType("bit");
+
+                    b.Property<string>("password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

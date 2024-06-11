@@ -69,6 +69,10 @@ namespace School.Infrastructure.Migrations
                     b.Property<bool>("isPass")
                         .HasColumnType("bit");
 
+                    b.Property<string>("password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("StudentsTbl");
