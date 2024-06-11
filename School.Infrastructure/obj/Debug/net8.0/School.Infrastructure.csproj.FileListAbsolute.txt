@@ -1,0 +1,17 @@
+C:\Users\asemn\source\repos\School\School.Infrastructure\obj\Debug\net8.0\School.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asemn\source\repos\School\School.Infrastructure\obj\Debug\net8.0\School.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\asemn\source\repos\School\School.Infrastructure\obj\Debug\net8.0\School.Infrastructure.AssemblyInfo.cs
+C:\Users\asemn\source\repos\School\School.Infrastructure\obj\Debug\net8.0\School.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\asemn\source\repos\School\School.Infrastructure\bin\Debug\net8.0\School.Infrastructure.deps.json
+C:\Users\asemn\source\repos\School\School.Infrastructure\bin\Debug\net8.0\School.Infrastructure.runtimeconfig.json
+C:\Users\asemn\source\repos\School\School.Infrastructure\bin\Debug\net8.0\School.Infrastructure.dll
+C:\Users\asemn\source\repos\School\School.Infrastructure\bin\Debug\net8.0\School.Infrastructure.pdb
+C:\Users\asemn\source\repos\School\School.Infrastructure\obj\Debug\net8.0\School.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\asemn\source\repos\School\School.Infrastructure\obj\Debug\net8.0\School.Infrastructure.dll
+C:\Users\asemn\source\repos\School\School.Infrastructure\obj\Debug\net8.0\refint\School.Infrastructure.dll
+C:\Users\asemn\source\repos\School\School.Infrastructure\obj\Debug\net8.0\School.Infrastructure.pdb
+C:\Users\asemn\source\repos\School\School.Infrastructure\obj\Debug\net8.0\School.Infrastructure.genruntimeconfig.cache
+C:\Users\asemn\source\repos\School\School.Infrastructure\obj\Debug\net8.0\ref\School.Infrastructure.dll
+C:\Users\asemn\source\repos\School\School.Infrastructure\bin\Debug\net8.0\School.Core.dll
+C:\Users\asemn\source\repos\School\School.Infrastructure\bin\Debug\net8.0\School.Core.pdb
+C:\Users\asemn\source\repos\School\School.Infrastructure\obj\Debug\net8.0\School.I.43F417B3.Up2Date

@@ -1,0 +1,11 @@
+C:\Users\asemn\source\repos\School\School.Core\bin\Debug\net8.0\School.Core.deps.json
+C:\Users\asemn\source\repos\School\School.Core\bin\Debug\net8.0\School.Core.dll
+C:\Users\asemn\source\repos\School\School.Core\bin\Debug\net8.0\School.Core.pdb
+C:\Users\asemn\source\repos\School\School.Core\obj\Debug\net8.0\School.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asemn\source\repos\School\School.Core\obj\Debug\net8.0\School.Core.AssemblyInfoInputs.cache
+C:\Users\asemn\source\repos\School\School.Core\obj\Debug\net8.0\School.Core.AssemblyInfo.cs
+C:\Users\asemn\source\repos\School\School.Core\obj\Debug\net8.0\School.Core.csproj.CoreCompileInputs.cache
+C:\Users\asemn\source\repos\School\School.Core\obj\Debug\net8.0\School.Core.dll
+C:\Users\asemn\source\repos\School\School.Core\obj\Debug\net8.0\refint\School.Core.dll
+C:\Users\asemn\source\repos\School\School.Core\obj\Debug\net8.0\School.Core.pdb
+C:\Users\asemn\source\repos\School\School.Core\obj\Debug\net8.0\ref\School.Core.dll
